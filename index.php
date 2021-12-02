@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1 id="lang">Haifuckqueue</h1>
+    <h1 id="lang">Husk</h1>
     <button class = "code" type="button">header</button>
     <br>
 

@@ -15,14 +15,17 @@ $code = $_POST["code"];
 # get the code length
 $code_len = strlen($code);
 
+# hardcode file extension
+$file_extension = "husk";
+
 # write input to input.txt
 shell_exec("echo '$input' > '$lang/input.txt'");
 
 # write all code to code file
-shell_exec("cd '$lang'; echo '$all_code' > 'code.hfqbruh'");
+shell_exec("cd '$lang'; echo '$all_code' > 'code.$file_extension'");
 
 # run the code with a timeout of 5 seconds and write stdout to stdout.txt and sterr to stderr.txt
-shell_exec("cd $lang && timeout 5 sh 'run.sh' 'code.hfqbruh' '$args' 1>stdout.txt 2>stderr.txt");
+shell_exec("cd $lang && timeout 5 sh 'run.sh' 'code.$file_extension' '$args' 1>stdout.txt 2>stderr.txt");
 
 # get stdout and stderr from files
 $stdout = shell_exec("cat $lang/stdout.txt");
