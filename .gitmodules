@@ -1,0 +1,15 @@
+[submodule "Husk/bruh"]
+	path = Husk/bruh
+	url = git@github.com:barbuz/Husk.git
+[submodule "Husk/Husk/src"]
+	path = Husk/Husk/src
+	url = git@github.com:barbuz/Husk.git
+[submodule "Husk/Husk/Husk/src"]
+	path = Husk/Husk/Husk/src
+	url = git@github.com:barbuz/Husk.git
+[submodule "src"]
+	path = src
+	url = git@github.com:barbuz/Husk.git
+[submodule "Husk/src"]
+	path = Husk/src
+	url = git@github.com:barbuz/Husk.git
